@@ -1521,8 +1521,8 @@ void PairPanicTableKcomp::compute_desiredforce(double x, double y, double vx, do
         r = sqrt(rsqmin);
           rinv = 1.0/r;
           nx = dx_min*rinv;
-          force_desired[0] = MOT*(vd*nx - vx);   // Sticco 18 Jun 2018
-          force_desired[1] = MOT*(vd*ny - vy);   // Sticco 6 Sept 2019
+          force_desired[0] = MOT*(vd*nx-vx);   // Sticco 18 Jun 2018
+          force_desired[1] = MOT*(vd*ny-vy);   // Sticco 6 Sept 2019
       }
       else if (ubication_min == 3){
           force_desired[0] = 0.0;     // Sticco 18 Jun 2018
@@ -1543,7 +1543,7 @@ void PairPanicTableKcomp::compute_desiredforce(double x, double y, double vx, do
           rinv = 1.0/r;
           ny = dy_min*rinv;
           force_desired[0] = MOT*(vd*nx-vx); // Sticco 6 Sept 2019
-          force_desired[1] = MOT*(vd*ny - vy);  // Sticco 18 Jun 2018
+          force_desired[1] = MOT*(vd*ny-vy);  // Sticco 18 Jun 2018
       }
       else if (ubication_min == 3){
           force_desired[0] = 0.0;     // Sticco 18 Jun 2018
